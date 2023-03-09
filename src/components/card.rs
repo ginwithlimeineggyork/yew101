@@ -15,8 +15,11 @@ pub fn card(CardProp { user }: &CardProp) -> Html {
             class="mr-2" alt="img" 
         />
         <div class="container">
-            <p class="fw-bold mb-1">{format!(
-                "{}", user.first_name.clone())}</p>
+            <p class="fw-bold mb-1">{
+                format!(
+                    "{}", user.first_name.clone())
+                }
+            </p>
             <p class="fw-normal mb-1">{user.phone.clone()}</p>
             <p class="fw-normal mb-1">{user.email.clone()}</p>
         </div>

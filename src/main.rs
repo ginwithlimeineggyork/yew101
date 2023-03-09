@@ -83,8 +83,8 @@ fn app() -> Html {
     html! {
       <>
         <Nav />
+        <Input />  
         {user_list_logic}
-        // <Input />  
       </>
     }
 }
